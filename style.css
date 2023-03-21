@@ -1,0 +1,113 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif; 
+}
+.logo {
+   width: 50px;
+   height: 50px;
+}
+
+.nav-item .nav-link {
+   color: rgb(23, 23, 23);
+   margin-left: 10px;
+   font-weight: bold;
+    border-radius: 10px;
+   transition: 0.5s;
+}
+
+.nav-item .nav-link:hover {
+   background: #CEAB93;
+   border-radius: 10px;
+   color: rgb(0, 0, 0);
+}
+
+.front {
+   width: 100%;
+   height: 100vh;
+   background-image: url(./images/bak.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+}
+
+.title {
+   position: absolute; 
+   text-align: center;
+   margin-top: 15%;
+   left: 700px;
+}
+
+span {
+   font-family: 'Montserrat', sans-serif;
+}
+
+.my-name {
+   font-size: 2rem;
+   font-weight: 700;
+   text-decoration: none;
+   color: #876445;
+   cursor: pointer;
+}
+
+ /* footer section */
+ #footer {
+   width: 100%;
+}
+
+.footer-logo img {
+   width: 180px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.socail-links i {
+   font-size: 17px;
+   margin-left: 10px;
+   margin-top: 30px;
+   padding: 10px;
+   background: black;
+   color: white;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.credits {
+   color: rgb(11, 11, 11);
+   margin-top: 20px;
+   text-shadow: 0px 0px 1px black;
+}
+
+.credits a {
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+}
+
+#credits a span {
+   color: black;
+}
+
+.copyright span {
+   color: black;
+}
+
+
+@media (max-width: 1000px) {
+   .title {
+      position: static;
+      align-items: center;
+      text-align: center;
+      margin-top: 0;
+      padding-top:70px;
+   }
+
+   .about {
+      text-align: center;
+   }
+}
