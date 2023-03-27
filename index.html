@@ -25,50 +25,229 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="./images/logo.png" class="logo" alt=""><strong>Eujiko</strong></a>
+    <nav class="navbar navbar-expand-lg mx-0 my-0 bg-light">
+            <a class="navbar-brand" href="#home"><img src="./images/logo.png" class="logo"
+                    alt="" onclick="navigate('home')"><strong>Eujiko</strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="social.html">My Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="timeline.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutme" onclick="navigate('aboutme')">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog" onclick="navigate('blog')">My work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" onclick="navigate('contact')">Contact</a></li>
                 </ul>
             </div>
-        </div>
     </nav>
 
-    <div class="front">
+    <div class="front page" id="home">
         <div class="title">
             <h1>Hi <span>Welcome</span></h1>
             <p>I am <a class="my-name">JEANSON</a> <br> a Web Developer/Photographer</p><br>
         </div>
     </div>
 
-    <footer id="footer">
-        <div class="socail-links text-center">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-discord"></i>
-        </div>
+    <!--timeline-->
+    <div id="aboutme" class="page hidden">
+        <h1>About <span>Me</span></h1>
+        <div class="container container-main">
 
-        <div class="credits text-center">
-            WD46<a href="#"> <span>Eujiko Jeanson</span></a>
-        </div>
+            <div class="timeline-block timeline-block-right">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                    <h3>First Year</h3>
+                    <span>Some work experience</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate.</p>
+                </div>
+            </div>
 
-        <div class="copyright text-center">
-            &copy; Copyright <strong> <span>KODEGO</span></strong>. All Rights reserved
-        </div>
-    </footer>
+            <div class="timeline-block timeline-block-left">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                    <h3>Seconed Year</h3>
+                    <span>Some work experience</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate.</p>
+                </div>
+            </div>
 
- 
+            <div class="timeline-block timeline-block-right">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                    <h3>Third Year</h3>
+                    <span>Some work experience</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block timeline-block-left">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                    <h3>Fourth Year</h3>
+                    <span>Some work experience</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block timeline-block-right">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                    <h3>Fifth Year</h3>
+                    <span>Some work experience</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--blog section-->
+    <section class="bg-light my-0 shadow-sm page hidden" id="blog">
+        <div class="container my-0">
+            <div class="row pt-5">
+                <div class="col-12">
+                    <h3 class="text-uppercase border-bottom mb-4" style="text-align: center;">More about me</h3>
+                </div>
+            </div>
+            <!--start of box-->
+            <div class="row">
+                <!--box-->
+                <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="./images/s2.jpg" class="card-img-top" alt="Card Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">My skills</h5>
+                            <p class="card-text mb-4">Is a manmade waterway dug in the early 1600's and now displays
+                                many landmark commercial locals and vivid neon signs.</p>
+                            <a href="#" class="btn btn-primary mt-auto align-self-start">View</a>
+                        </div>
+                    </div>
+                </div>
+                <!--box-->
+                <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="images/s3.jpg" class="card-img-top" alt="Card Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">My latest Work</h5>
+                            <p class="card-text mb-4">Near Afionas village, on the west coast of Corfu island. The two
+                                beaches form two unique bays. The turquoise color of the sea contrasts to the high green
+                                hills surrounding it.</p>
+                            <a href="#" class="btn btn-primary mt-auto align-self-start">View</a>
+                        </div>
+                    </div>
+                </div>
+                <!--box-->
+                <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="images/s4.jpg" class="card-img-top" alt="Card Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">All about Eujiko</h5>
+                            <p class="card-text mb-4">Located just outside the City Gate of Valletta, Malta. It consists
+                                of three bronze Tritons holding up a large basin, balanced on a concentric base built
+                                out of concrete and clad in travertine slabs.</p>
+                            <a href="#" class="btn btn-primary mt-auto align-self-start">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of box-->
+        </div>
+    </section>
+
+
+
+    <!-- contact section-->
+    <div id="contact" class="page hidden">
+        <form>
+            <div class="form">
+                <div class="form-txt">
+                    <h1>Contact Us</h1>
+                    <span>As you might expect of a company that began as a high-end interiors contractor, we pay strict
+                        attention.</span>
+                    <h3>My Number</h3>
+                    <p>+639123137136<br>+43 982-314-0958</p>
+                    <h3>My Address</h3>
+                    <p>HW95+C9C, Mhada Colony, Viman Nagar, Pune, Maharashtra<br>411014</p>
+                </div>
+                <div class="form-details">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <textarea name="message" id="message" cols="52" rows="7" placeholder="Message" required></textarea>
+                    <button>SEND MESSAGE</button></a>
+                </div>
+            </div>
+
+            <footer id="footer">
+                <div class="socail-links text-center">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+
+                <div class="credits text-center">
+                    WD46<a href="#"> <span>Eujiko Jeanson</span></a>
+                </div>
+
+                <div class="copyright text-center">
+                    &copy; Copyright <strong> <span>KODEGO</span></strong>. All Rights reserved
+                </div>
+            </footer>
+        </form>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Define the initial state
+        window.history.replaceState({ page: 'home' }, 'home', '#home');
+
+        // Update the page content
+        function updateContent(pageName) {
+            // hide all pages
+            const pages = document.getElementsByClassName('page');
+            for (let p of pages) {
+                p.classList.add('hidden');
+            }
+
+            // show current page
+            const currentPage = document.getElementById(pageName);
+            currentPage.classList.remove('hidden');
+
+        }
+
+        // Handle navigation using the History API
+        function navigate(pageName) {
+            // Push the new state onto the history stack
+            window.history.pushState({ page: pageName }, pageName, `#${pageName}`);
+
+            updateContent(pageName);
+        }
+
+        // Handle the popstate event to update the content when the back/forward buttons are clicked
+        window.addEventListener('popstate', function (e) {
+            if (e.state) {
+                updateContent(e.state.page);
+            }
+        });
+
+        function doubleBack() {
+            window.history.go(-2);
+        }
+    </script>
 </body>
 
 </html>
